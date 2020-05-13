@@ -1,9 +1,8 @@
 # botshoepalace
 shoepalacebot
 
-a software designed for automation for shoepalace.com
-credits go to flatui for the userinterface framework
+a working shoepalace "bot" that is based off 100% selenium and flatui framework.
 
-uses selenium
-
-#a work in progress bot not intended for use just yet.
+# adding
+- auto checkout
+- check out using the data identifier
