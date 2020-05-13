@@ -10,7 +10,7 @@ a working shoepalace "bot" that is based off 100% selenium and flatui framework.
 
 # note profiles will not work at this time i havent even worked on it lmfao its a placeholder and proxy
 
-download link: https://anonfile.com/dbU5c6z2oc/botshoepalace-v1_7z
+download link: https://github.com/ascendingdev/botshoepalace/releases/tag/test
 or go to the bin\Release folder and download everything there and open the application
 
 ```cs
