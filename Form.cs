@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using FlatUI;
+using OpenQA.Selenium.Remote;
 
 namespace ShoePalaceBot
 {
@@ -22,6 +23,8 @@ namespace ShoePalaceBot
             Task shoePalaceTask = Task.Run(() => {
                 var palaceTask = new ShoePalaceTask();
                 palaceTask.textBox = OutputBox;
+                palaceTask.monitorDelay = Convert.ToInt32(MonitorDelayInput.Text);
+                palaceTask.retryDelay = Convert.ToInt32(RetryDelayInput.Text);
                 palaceTask.getProductDetails(LinkInput.Text);
                 palaceTask.addToCart(SizeInput.Text);
                 palaceTask.Checkout();

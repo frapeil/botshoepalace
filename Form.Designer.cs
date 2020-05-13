@@ -82,6 +82,12 @@
             this.Settings = new System.Windows.Forms.TabPage();
             this.panel4 = new System.Windows.Forms.Panel();
             this.flatClose1 = new FlatUI.FlatClose();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.flatLabel22 = new FlatUI.FlatLabel();
+            this.flatLabel23 = new FlatUI.FlatLabel();
+            this.MonitorDelayInput = new FlatUI.FlatTextBox();
+            this.flatLabel24 = new FlatUI.FlatLabel();
+            this.RetryDelayInput = new FlatUI.FlatTextBox();
             this.Skin.SuspendLayout();
             this.flatTabControl1.SuspendLayout();
             this.TaskCreationTab.SuspendLayout();
@@ -91,6 +97,7 @@
             this.panel2.SuspendLayout();
             this.Proxy.SuspendLayout();
             this.Settings.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // Skin
@@ -158,6 +165,7 @@
             // TaskCreationTab
             // 
             this.TaskCreationTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(70)))), ((int)(((byte)(73)))));
+            this.TaskCreationTab.Controls.Add(this.panel6);
             this.TaskCreationTab.Controls.Add(this.panel5);
             this.TaskCreationTab.Controls.Add(this.panel1);
             this.TaskCreationTab.Location = new System.Drawing.Point(4, 44);
@@ -200,6 +208,7 @@
             this.OutputBox.ReadOnly = true;
             this.OutputBox.Size = new System.Drawing.Size(301, 152);
             this.OutputBox.TabIndex = 6;
+            this.OutputBox.Text = "Idle.";
             this.OutputBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.OutputBox.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.OutputBox.UseSystemPasswordChar = false;
@@ -279,11 +288,11 @@
             this.flatLabel2.BackColor = System.Drawing.Color.Transparent;
             this.flatLabel2.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.flatLabel2.ForeColor = System.Drawing.Color.White;
-            this.flatLabel2.Location = new System.Drawing.Point(10, 31);
+            this.flatLabel2.Location = new System.Drawing.Point(5, 33);
             this.flatLabel2.Name = "flatLabel2";
-            this.flatLabel2.Size = new System.Drawing.Size(28, 13);
+            this.flatLabel2.Size = new System.Drawing.Size(69, 13);
             this.flatLabel2.TabIndex = 9;
-            this.flatLabel2.Text = "Link";
+            this.flatLabel2.Text = "Link/Data Id";
             // 
             // LinkInput
             // 
@@ -831,6 +840,87 @@
             this.flatClose1.Text = "CloseButton";
             this.flatClose1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
             // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel6.Controls.Add(this.flatLabel24);
+            this.panel6.Controls.Add(this.RetryDelayInput);
+            this.panel6.Controls.Add(this.flatLabel23);
+            this.panel6.Controls.Add(this.flatLabel22);
+            this.panel6.Controls.Add(this.MonitorDelayInput);
+            this.panel6.Location = new System.Drawing.Point(269, 3);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(219, 119);
+            this.panel6.TabIndex = 15;
+            // 
+            // flatLabel22
+            // 
+            this.flatLabel22.AutoSize = true;
+            this.flatLabel22.BackColor = System.Drawing.Color.Transparent;
+            this.flatLabel22.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.flatLabel22.ForeColor = System.Drawing.Color.White;
+            this.flatLabel22.Location = new System.Drawing.Point(0, 0);
+            this.flatLabel22.Name = "flatLabel22";
+            this.flatLabel22.Size = new System.Drawing.Size(72, 13);
+            this.flatLabel22.TabIndex = 12;
+            this.flatLabel22.Text = "Global Delay";
+            // 
+            // flatLabel23
+            // 
+            this.flatLabel23.AutoSize = true;
+            this.flatLabel23.BackColor = System.Drawing.Color.Transparent;
+            this.flatLabel23.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.flatLabel23.ForeColor = System.Drawing.Color.White;
+            this.flatLabel23.Location = new System.Drawing.Point(7, 31);
+            this.flatLabel23.Name = "flatLabel23";
+            this.flatLabel23.Size = new System.Drawing.Size(49, 13);
+            this.flatLabel23.TabIndex = 16;
+            this.flatLabel23.Text = "Monitor";
+            // 
+            // MonitorDelayInput
+            // 
+            this.MonitorDelayInput.BackColor = System.Drawing.Color.Transparent;
+            this.MonitorDelayInput.FocusOnHover = false;
+            this.MonitorDelayInput.Location = new System.Drawing.Point(5, 49);
+            this.MonitorDelayInput.MaxLength = 32767;
+            this.MonitorDelayInput.Multiline = false;
+            this.MonitorDelayInput.Name = "MonitorDelayInput";
+            this.MonitorDelayInput.ReadOnly = false;
+            this.MonitorDelayInput.Size = new System.Drawing.Size(46, 29);
+            this.MonitorDelayInput.TabIndex = 15;
+            this.MonitorDelayInput.Text = "2000";
+            this.MonitorDelayInput.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.MonitorDelayInput.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.MonitorDelayInput.UseSystemPasswordChar = false;
+            // 
+            // flatLabel24
+            // 
+            this.flatLabel24.AutoSize = true;
+            this.flatLabel24.BackColor = System.Drawing.Color.Transparent;
+            this.flatLabel24.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.flatLabel24.ForeColor = System.Drawing.Color.White;
+            this.flatLabel24.Location = new System.Drawing.Point(59, 31);
+            this.flatLabel24.Name = "flatLabel24";
+            this.flatLabel24.Size = new System.Drawing.Size(33, 13);
+            this.flatLabel24.TabIndex = 18;
+            this.flatLabel24.Text = "Retry";
+            // 
+            // RetryDelayInput
+            // 
+            this.RetryDelayInput.BackColor = System.Drawing.Color.Transparent;
+            this.RetryDelayInput.FocusOnHover = false;
+            this.RetryDelayInput.Location = new System.Drawing.Point(57, 49);
+            this.RetryDelayInput.MaxLength = 32767;
+            this.RetryDelayInput.Multiline = false;
+            this.RetryDelayInput.Name = "RetryDelayInput";
+            this.RetryDelayInput.ReadOnly = false;
+            this.RetryDelayInput.Size = new System.Drawing.Size(46, 29);
+            this.RetryDelayInput.TabIndex = 17;
+            this.RetryDelayInput.Text = "6666";
+            this.RetryDelayInput.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.RetryDelayInput.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.RetryDelayInput.UseSystemPasswordChar = false;
+            // 
             // Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -855,6 +945,8 @@
             this.panel2.PerformLayout();
             this.Proxy.ResumeLayout(false);
             this.Settings.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -915,6 +1007,12 @@
         private FlatUI.FlatTextBox PhoneNumberInput;
         private FlatUI.FlatLabel flatLabel19;
         private FlatUI.FlatTextBox CardTypeInput;
+        private System.Windows.Forms.Panel panel6;
+        private FlatUI.FlatLabel flatLabel24;
+        private FlatUI.FlatTextBox RetryDelayInput;
+        private FlatUI.FlatLabel flatLabel23;
+        private FlatUI.FlatLabel flatLabel22;
+        private FlatUI.FlatTextBox MonitorDelayInput;
     }
 }
 
