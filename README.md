@@ -2,6 +2,7 @@
 shoepalacebot
 
 a working shoepalace "bot" that is based off 100% selenium and flatui framework.
+# shout out to washedcops's tweets for the encouragement
 
 # adding
 - auto checkout
